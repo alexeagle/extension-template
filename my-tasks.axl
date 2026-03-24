@@ -1,0 +1,7 @@
+def _mytask_impl(ctx):
+    ctx.std.io.stdout.write("Hello, World!")
+
+mytask = task(
+    implementation = _mytask_impl,
+    args = {},
+)
