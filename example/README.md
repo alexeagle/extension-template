@@ -12,8 +12,8 @@ Lorem Ipsum
 output="$(aspect mytask)"
 
 # Verify that it produces the expected output
-echo "${output}" | grep -q "SUCCESS" || {
-    echo >&2 "Wanted output containing 'SUCCESS' but got '${output}'"
+echo "${output}" | grep -q "Hello, World" || {
+    echo >&2 "Wanted output containing 'Hello World' but got '${output}'"
     exit 1
 }
 ~~~
